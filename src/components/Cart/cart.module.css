@@ -1,41 +1,44 @@
-.card {
-    position: relative;
+/* * Estilos do Carrinho */
+
+.cart {
+    margin-top: 40px;
+    background-color: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .cart h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .cart ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .cart li {
+    background-color: white;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-    padding: 1rem;
-    width: 14rem;
-    background-color: var(--bg-card);
-    border-radius: 1rem;
-}
-
-.imgConteiner {
-    overflow: hidden;
-    cursor: pointer;
-    position: relative;
-    z-index: 1;
-    width: 100%;
-    height: 8rem;
-    background-color: #6495ed;
-    border-radius: 0.5rem;
-}
-
-.imgConteiner .image {
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 3rem;
-    fill: #d9d9d9;
-}
-
-.title {
-    overflow: clip;
-    width: 100%;
-    font-size: 1rem;
-    font-weight: 500;
-    color: #d9d9d9;
-    text-transform: capitalize;
-    text-wrap: nowrap;
-    text-overflow: ellipsis;
-}
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .cart li span {
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  .cart li::before {
+    content: '🛒';
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }

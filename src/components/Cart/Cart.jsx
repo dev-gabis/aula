@@ -1,24 +1,47 @@
-import styles from "./cart.module.css"
+import React, { useContext } from 'react';
+import { CartContext } from '../../context/ContextCart';
+import { Typography, List, ListItem, ListItemText, Button } from '@mui/material';
 
-export const Cart = () => {
-    return (
-        <div className={styles.cart}>
-            {/* <img src="" alt="" /> */} {/*imagem do produto muahahaha*/}
-            <div className={styles.imgConteiner}>
-                <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" className={styles.image}>
-                    <path
-                        d="M20 5H4V19L13.2923 9.70649C13.6828 9.31595 14.3159 9.31591 14.7065 9.70641L20 15.0104V5ZM2 3.9934C2 3.44476 2.45531 3 2.9918 3H21.0082C21.556 3 22 3.44495 22 3.9934V20.0066C22 20.5552 21.5447 21 21.0082 21H2.9918C2.44405 21 2 20.5551 2 20.0066V3.9934ZM8 11C6.89543 11 6 10.1046 6 9C6 7.89543 6.89543 7 8 7C9.10457 7 10 7.89543 10 9C10 10.1046 9.10457 11 8 11Z"
-                    ></path>
-                </svg>
-            </div>
-            <div className={styles.title}>
-                <h2>nome do produto</h2>
-            </div>
-            <ul>
-                {/* itens do carrinho muito zica */}
-            </ul>
-            <p>Total: $123.45</p>
-            <button>Add</button>
-        </div>
-    )
-}
+const Cart = () => {
+  const { cart, removeFromCart } = useContext(CartContext);
+
+  const getTotal = () => {
+    return cart.reduce((total, item) => total + item.price, 0);
+  };
+
+  return (
+    <div style={{ padding: '20px' }}>
+      <Typography variant="h4" gutterBottom>
+        Your Cart
+      </Typography>
+      <List>
+        {cart.length > 0 ? (
+          cart.map((item) => (
+            <ListItem key={item.id} divider>
+              <ListItemText
+                primary={item.name}
+                secondary={`Price: $${item.price}`}
+              />
+              <Button
+                variant="contained"
+                sx={{ backgroundColor: 'red' }}
+                onClick={() => removeFromCart(item.id)}
+              >
+                Remove
+              </Button>
+            </ListItem>
+          ))
+        ) : (
+          <Typography variant="body1">Your cart is empty</Typography>
+        )}
+      </List>
+      {cart.length > 0 && (
+        <Typography variant="h6" sx={{ marginTop: 2 }}>
+          Total: ${getTotal()}
+        </Typography>
+      )}
+    </div>
+  );
+};
+
+export default Cart;
