@@ -5,11 +5,10 @@ Este projeto é uma aplicação de e-commerce simples construída com React e Vi
 
 ## Tecnologias Utilizadas  🔧
 
-- [React.js](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Material-UI](https://mui.com/)
-- [React Router](https://reactrouter.com/)
-
+- ![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg) [React.js](https://reactjs.org/)
+- ![Vite](https://vitejs.dev/logo.svg) [Vite](https://vitejs.dev/)
+- ![Material-UI](https://mui.com/static/logo.png) [Material-UI](https://mui.com/)
+- ![React Router](https://reactrouter.com/favicon.ico) [React Router](https://reactrouter.com/)
 ## Funcionalidades
 
 - Exibição de uma lista de produtos
