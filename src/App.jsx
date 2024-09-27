@@ -1,6 +1,7 @@
 import { CartProvider } from './context/ContextCart';
 import ItemList from './components/ItemList';
 import './App.css';
+import { NavBar } from './components/Navbar/navbar';
 
 const items = [
   { id: 1, name: 'Produto 1', price: 100 },
@@ -12,9 +13,15 @@ const items = [
 
 function App() {
   return (
+    <>
+    <NavBar/>
+
+    <section className='products'>
     <CartProvider>
       <ItemList items={items} />
     </CartProvider>
+    </section>
+    </>
   );
 }
 

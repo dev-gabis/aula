@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../context/ContextCart.jsx';
-// import ItemList from './itemList.jsx';
+import ItemList from './ItemList';
 
 // * Componente que renderiza um produto
 
