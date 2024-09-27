@@ -10,17 +10,34 @@ const Header = () => {
           My Store
         </Typography>
         <Button onClick={() => handleAddToCart(item)}
-              sx={{
-                backgroundColor: 'white',
-                color: 'black',
-                transition: 'transform 0.3s',
-                '&:hover': {
-                  transform: 'scale(1.1)',
-                  backgroundColor: 'darkgreen',
-                  color: 'white',
-                },
-              }} component={Link} to="/">Products</Button>
-        <Button sx={{ color: 'white' }} component={Link} to="/cart">Cart</Button>
+          sx={{
+            backgroundColor: 'white',
+            color: 'black',
+            transition: 'transform 0.3s',
+            margin: '0 10px',
+            '&:hover': {
+              transform: 'scale(1.1)',
+              backgroundColor: 'darkgreen',
+              color: 'white',
+            },
+          }} component={Link} to="/">Products</Button>
+        <Button
+          onClick={() => handleAddToCart(item)}
+          sx={{
+            backgroundColor: 'white',
+            color: 'black',
+            transition: 'transform 0.3s',
+            '&:hover': {
+              transform: 'scale(1.1)',
+              backgroundColor: 'darkgreen',
+              color: 'white',
+            },
+          }}
+          component={Link}
+          to="/cart"
+        >
+          🛒 Cart
+        </Button>
       </Toolbar>
     </AppBar>
   );
