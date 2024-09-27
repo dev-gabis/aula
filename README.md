@@ -4,7 +4,7 @@ Este projeto é uma aplicação de e-commerce simples construída com React e Vi
 
 ## Tecnologias Utilizadas
 
-- [React](https://reactjs.org/)
+- ![React](https://cdn4.iconfinder.com/data/icons/logos-3/600/React.js_logo-1024.png) [React](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Material-UI](https://mui.com/)
 - [React Router](https://reactrouter.com/)
