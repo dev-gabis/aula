@@ -1,8 +1,25 @@
-# React + Vite
+# My Store
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é uma aplicação de e-commerce simples construída com React e Vite. Ele permite que os usuários naveguem por produtos, adicionem itens ao carrinho e visualizem o total do carrinho.
 
-Currently, two official plugins are available:
+## Tecnologias Utilizadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Material-UI](https://mui.com/)
+- [React Router](https://reactrouter.com/)
+- [Context API](https://reactjs.org/docs/context.html)
+
+## Funcionalidades
+
+- Exibição de uma lista de produtos
+- Adição de produtos ao carrinho
+- Remoção de produtos do carrinho
+- Exibição do total do carrinho
+- Notificações de confirmação ao adicionar itens ao carrinho
+
+## Instalação
+
+1. Clone o repositório:
+   ```bash
+   git clone https://github.com/seu-usuario/seu-repositorio.git
