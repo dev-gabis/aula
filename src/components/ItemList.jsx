@@ -1,5 +1,5 @@
 import React from 'react';
-import ProductCard from `./ProductCart`;
+import ProductCard from './ProductCart';
 
 // * Componente que renderiza a lista de produtos
 
@@ -8,6 +8,7 @@ const ItemList = ({ items }) => {
         <div className="item-list">
             {items.map((item) => (
                 <ProductCard key={item.id} item={item} />
+
             ))}
         </div>
     );

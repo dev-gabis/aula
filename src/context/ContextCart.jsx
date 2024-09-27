@@ -1,20 +1,17 @@
-import { createContext, useState, useContext } from 'react';
+import { createContext, useState } from 'react';
 
-const CartContext = createContext(); // Criando um contexto
+export const CartContext = createContext(); // Certifique-se de exportar o CartContext
 
-// Criando um hook para usar o contexto
 export const CartProvider = ({ children }) => {
     const [cartItems, setCartItems] = useState([]);
 
-    const addToCart = (product) => { // Adiciona um produto ao carrinho
-        setCart = ([...cartItems, product]); // Adiciona o produto ao carrinho
-    }
+    const addToCart = (product) => {
+        setCartItems([...cartItems, product]);
+    };
 
-    return ( // Retorna o contexto com o valor do carrinho e a função para adicionar um produto ao carrinho
-        <CartContext.Provider value={{ cart, addToCart }}>
+    return (
+        <CartContext.Provider value={{ cartItems, addToCart }}>
             {children}
         </CartContext.Provider>
     );
 };
-
-
