@@ -6,6 +6,26 @@ import Cart from './components/Cart/Cart';
 import Header from './components/header/header'; // Importando o novo Header
 import products from './data/products';
 
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+
+// Customizando o tema
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#007bff',
+    },
+    secondary: {
+      main: '#ff4081',
+    },
+  },
+  typography: {
+    h4: {
+      fontWeight: 600,
+    },
+  },
+});
+
+
 const App = () => {
   return (
     <CartProvider>
