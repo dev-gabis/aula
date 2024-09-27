@@ -21,7 +21,7 @@ my-store/
 ├── .gitignore
 ├── package.json
 ├── README.md
-└── vite.config.js
+└── vite.config.js ```
 
 ## Tecnologias Utilizadas  🔧
 
