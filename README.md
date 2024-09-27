@@ -2,11 +2,6 @@
 
 Este projeto é uma aplicação de e-commerce simples construída com React e Vite. Ele permite que os usuários naveguem por produtos, adicionem itens ao carrinho e visualizem o total do carrinho.
 
-
-## Tecnologias Utilizadas  🔧
-
-## Tecnologias Utilizadas  🔧
-
 ## Tecnologias Utilizadas  🔧
 
 - <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React" width="20"/> [React.js](https://reactjs.org/)
@@ -23,7 +18,7 @@ Este projeto é uma aplicação de e-commerce simples construída com React e Vi
 - Exibição do total do carrinho
 - Notificações de confirmação ao adicionar itens ao carrinho
 
-```plaintext
+```bash
 my-store/
 ├── public/
 │   ├── index.html
