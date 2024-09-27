@@ -25,11 +25,17 @@ my-store/
 
 ## Tecnologias Utilizadas  🔧
 
-- [React.js](https://reactjs.org/)
+- [⚛️ React.js](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Material-UI](https://mui.com/)
 - [React Router](https://reactrouter.com/)
-- [Context API](https://reactjs.org/docs/context.html)
+
+ ## Tecnologias Utilizadas  🔧
+
+- [React.js](https://reactjs.org/) ![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
+- [Vite](https://vitejs.dev/) ![Vite](https://vitejs.dev/logo.svg)
+- [Material-UI](https://mui.com/) ![Material-UI](https://mui.com/static/logo.png)
+- [React Router](https://reactrouter.com/) ![React Router](https://reactrouter.com/favicon.ico)
 
 ## Funcionalidades
 
