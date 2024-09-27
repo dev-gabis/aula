@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { CartProvider } from './context/ContextCart';
 import ItemList from './components/ItemList';
 import Cart from './components/Cart/Cart';
-import Header from './components/header/header'; // Importando o novo Header
+import Header from './components/header'; // Importando o novo Header
 import products from './data/products';
 
 import { createTheme, ThemeProvider } from '@mui/material/styles';

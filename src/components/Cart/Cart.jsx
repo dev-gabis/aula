@@ -1,10 +1,13 @@
 import React, { useContext } from 'react';
 import { CartContext } from '../../context/ContextCart';
-import { List, ListItem, ListItemText, Button, Typography } from '@mui/material';
-import css from './cart.module.css';
+import { Typography, List, ListItem, ListItemText, Button } from '@mui/material';
 
 const Cart = () => {
   const { cart, removeFromCart } = useContext(CartContext);
+
+  const getTotal = () => {
+    return cart.reduce((total, item) => total + item.price, 0);
+  };
 
   return (
     <div style={{ padding: '20px' }}>
@@ -21,7 +24,7 @@ const Cart = () => {
               />
               <Button
                 variant="contained"
-                color="secondary"
+                sx={{ backgroundColor: 'red' }}
                 onClick={() => removeFromCart(item.id)}
               >
                 Remove
@@ -29,9 +32,14 @@ const Cart = () => {
             </ListItem>
           ))
         ) : (
-          <Typography variant="h6">Your cart is empty.</Typography>
+          <Typography variant="body1">Your cart is empty</Typography>
         )}
       </List>
+      {cart.length > 0 && (
+        <Typography variant="h6" sx={{ marginTop: 2 }}>
+          Total: ${getTotal()}
+        </Typography>
+      )}
     </div>
   );
 };
