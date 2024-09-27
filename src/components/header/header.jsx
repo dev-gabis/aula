@@ -1,15 +1,18 @@
 import React from 'react';
+import { AppBar, Toolbar, Typography, Button } from '@mui/material';
 import { Link } from 'react-router-dom';
-import css from './header.module.css';
 
 const Header = () => {
   return (
-    <header>
-      <nav className="menu">
-        <Link to="/">Products</Link>
-        <Link to="/cart">Cart</Link>
-      </nav>
-    </header>
+    <AppBar position="static" color="primary">
+      <Toolbar>
+        <Typography variant="h6" sx={{ flexGrow: 1 }}>
+          My Store
+        </Typography>
+        <Button color="inherit" component={Link} to="/">Products</Button>
+        <Button color="inherit" component={Link} to="/cart">Cart</Button>
+      </Toolbar>
+    </AppBar>
   );
 };
 
