@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   return (
-    <AppBar position="static" sx={{ backgroundColor: 'green' }}>
+    <AppBar position="static" sx={{ backgroundColor: 'green', borderRadius: '10px'}}>
       <Toolbar>
         <Typography variant="h6" sx={{ flexGrow: 1 }}>
           My Store
