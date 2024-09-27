@@ -25,7 +25,7 @@ my-store/
 
 ## Tecnologias Utilizadas  🔧
 
-- [⚛️ React.js](https://reactjs.org/)
+- [React.js](https://reactjs.org/)
 - [Vite](https://vitejs.dev/)
 - [Material-UI](https://mui.com/)
 - [React Router](https://reactrouter.com/)
