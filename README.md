@@ -3,6 +3,21 @@
 Este projeto é uma aplicação de e-commerce simples construída com React e Vite. Ele permite que os usuários naveguem por produtos, adicionem itens ao carrinho e visualizem o total do carrinho.
 
 
+## Tecnologias Utilizadas  🔧
+
+- [React.js](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Material-UI](https://mui.com/)
+- [React Router](https://reactrouter.com/)
+
+## Funcionalidades
+
+- Exibição de uma lista de produtos
+- Adição de produtos ao carrinho
+- Remoção de produtos do carrinho
+- Exibição do total do carrinho
+- Notificações de confirmação ao adicionar itens ao carrinho
+
 ```plaintext
 my-store/
 ├── public/
@@ -21,22 +36,8 @@ my-store/
 ├── .gitignore
 ├── package.json
 ├── README.md
-└── vite.config.js ```
+└── vite.config.js 
 
-## Tecnologias Utilizadas  🔧
-
-- [React.js](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Material-UI](https://mui.com/)
-- [React Router](https://reactrouter.com/)
-
-## Funcionalidades
-
-- Exibição de uma lista de produtos
-- Adição de produtos ao carrinho
-- Remoção de produtos do carrinho
-- Exibição do total do carrinho
-- Notificações de confirmação ao adicionar itens ao carrinho
 
 ## Instalação
 
